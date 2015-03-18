@@ -1,3 +1,5 @@
+var unirest = require('unirest');
+
 function App() {
 }
 
@@ -14,5 +16,20 @@ module.exports = function createApp() {
  */
 App.prototype.getWeather = function (zip) {
   console.log("zip is " + zip);
+
+  var url = "http://api.openweathermap.org/data/2.5/weather?q=";
+  var city = 'raleigh';
+
+  var Request = unirest.get(url + city);
+  Request.end( function(response) {
+    console.log("Got response from API:\n");
+    var data = response.body.main;
+    var max = data.temp_max;
+    var min = data.temp_min;
+
+    console.log('Max: ' + max);
+    console.log('Min: ' + min);
+  });
+
   return "41-62 degrees";
 }
