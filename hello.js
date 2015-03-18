@@ -6,5 +6,5 @@ var server = http.createServer(function(req, res) {
 });
 
 // need to be root to run on port 80
-server.listen(8080);
+server.listen(80);
 
