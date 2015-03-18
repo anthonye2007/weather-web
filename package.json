@@ -6,6 +6,7 @@
     "start": "node hello.js"
   },
   "dependencies": {
+    "express": "~4.9.x"
   },
   "engines": {
     "node": "0.10.x"
