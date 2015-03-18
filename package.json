@@ -11,7 +11,7 @@
   "engines": {
     "node": "0.10.x"
   },
-  "repositories": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/anthonye2007/weather-web.git"
   },
