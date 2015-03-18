@@ -8,6 +8,10 @@ app.get('/', function(request, response) {
   response.send('Hello World!!');
 });
 
+app.post('/', function(request, response) {
+  response.send('You just posted!!');
+});
+
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
 });
