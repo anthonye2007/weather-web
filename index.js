@@ -17,8 +17,8 @@ app.get('/', function(request, response) {
 
 app.post('/', function(request, response) {
   var zip = request.body.zip;
-  response.send('You just posted -- zip: ' + zip);
-  weather.getWeather(zip);
+  var temp = weather.getWeather(zip);
+  response.send(temp);
 });
 
 app.listen(app.get('port'), function() {
