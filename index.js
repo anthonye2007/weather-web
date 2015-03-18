@@ -1,5 +1,7 @@
 var express = require('express');
+var weatherModule = require('./app');
 var app = express();
+var weather = weatherModule();
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
@@ -16,6 +18,7 @@ app.get('/', function(request, response) {
 app.post('/', function(request, response) {
   var zip = request.body.zip;
   response.send('You just posted -- zip: ' + zip);
+  weather.getWeather(zip);
 });
 
 app.listen(app.get('port'), function() {
