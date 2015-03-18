@@ -1,0 +1,14 @@
+{
+  "name": "weather-web",
+  "description": "A sample weather app for DevOps class",
+  "main": "hello.js",
+  "scripts": {
+    "start": "node hello.js"
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "license": "MIT"
+}
