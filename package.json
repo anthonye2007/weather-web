@@ -1,15 +1,19 @@
 {
   "name": "weather-web",
   "description": "A sample weather app for DevOps class",
-  "main": "hello.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node hello.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "~4.9.x"
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "repositories": {
+    "type": "git",
+    "url": "https://github.com/anthonye2007/weather-web.git"
   },
   "license": "MIT"
 }
